@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>TO DO LIST</h1>
+    <form id="newTask">
+      <div id="input-group">
+        <input
+          type="text"
+          id="task-name"
+          placeholder="Inserisci il task"
+          required
+        />
+        <button id="button-list">Aggiungi alla lista</button>
+      </div>
+    </form>
+    <div id="small-list">Lista delle cose da fare:</div>
+    <section id="taskList">
+      <ul id="unordered-list"></ul>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
+</html>
