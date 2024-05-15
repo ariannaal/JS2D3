@@ -7,10 +7,15 @@ form.addEventListener("submit", function (event) {
     // console.log(taskValue)
     const ul = document.getElementById("unordered-list");
     const li = document.createElement("li");
+    const deleteButton = document.createElement("button");
+li.appendChild(deleteButton)
+
     li.classList.add("listItem")
     li.innerText = taskValue
     ul.appendChild(li);
     nameTask.value = "";
+
+    
 
     const completedTasks = document.querySelectorAll("li");
     completedTasks.forEach(function (task) {
@@ -18,6 +23,7 @@ form.addEventListener("submit", function (event) {
             task.innerHTML = "<strike>" + task.textContent + "</strike>";
         });
     });
+    
 });
 
 
